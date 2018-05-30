@@ -1,0 +1,14 @@
+{
+	"fromMail": "example@mail.com",
+  "fromName": "Example Name",
+	"to": "another@example.com",
+	"subject": "This is an example",
+	"bodyText": "My go-sendmail example!",
+	"bodyHtml": "<h1>Hi there from go-sendmail!<h1>",
+	"customArgs": {
+    "Identifier": "123456789-0",
+    "Type": "example-type",
+    "Key": "Value",
+    "foo": "bar"
+  }
+}
