@@ -34,8 +34,8 @@ Configure the lambda.json with your account information
 #### Deploy
 Deploy the function with aws-cli
 ```shell
-GOOS=linux go build main.go
-zip main.zip main.go
+GOOS=linux go build
+zip main.zip go-sendmail
 aws lambda create-function \
   --region us-east-1 \
   --zip-file fileb://main.zip \
@@ -51,6 +51,6 @@ aws lambda invoke \
   --region us-east-1 \
   --function-name go-sendmail \
   --log-type Tail \
-  --payload file://invoke-payload.json
-  outfile
+  --payload file://invoke-payload.json \
+  lambda-response
 ```
