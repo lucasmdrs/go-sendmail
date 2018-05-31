@@ -4,9 +4,19 @@
 *.dll
 *.so
 *.dylib
+go-sendmail
 
 # Test binary, build with `go test -c`
 *.test
 
 # Output of the go coverage tool, specifically when used with LiteIDE
 *.out
+
+# Output from lambda invokation
+lambda-response
+
+# Zip file
+*.zip
+
+# GoDep vendor
+vendor/

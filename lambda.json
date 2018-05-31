@@ -2,7 +2,7 @@
     "FunctionName": "go-sendmail",
     "Runtime": "go1.x",
     "Role": "arn:aws:iam::{{ YOUR_AWS_ACCOUNT_ID }}:role/{{ YOUR_ROLE_NAME }}",
-    "Handler": "main",
+    "Handler": "go-sendmail",
     "Description": "A simple AWS Lambda function written in Go to send emails using Sendgrid",
     "Timeout": 300,
     "MemorySize": 128,
